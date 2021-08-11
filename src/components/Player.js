@@ -21,7 +21,7 @@ const Player = ({
 }) => {
   const activeLibraryHandler = (nextPrev) => {
     const newSongs = songs.map((song) => {
-      if (song.id === currentSong.id) {
+      if (song.id === nextPrev.id) {
         return { ...song, active: true };
       } else {
         return { ...song, active: false };
