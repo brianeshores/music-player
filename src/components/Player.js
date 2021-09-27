@@ -33,7 +33,11 @@ const Player = ({
 
   // Event handlers
   const playSongHandler = () => {
-    isPlaying ? audioRef.current.pause() : audioRef.current.play();
+    isPlaying
+      ? audioRef.current.pause()
+      : audioRef.current.play().catch((error) => {
+          console.log(error);
+        });
     setIsPlaying(!isPlaying);
   };
 
