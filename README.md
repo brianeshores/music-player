@@ -1,6 +1,6 @@
 # React Music Player
 
-## Available Scripts
+## Getting Started
 
 In the project directory, you can run:
 
